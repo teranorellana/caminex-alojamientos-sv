@@ -3,17 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caminex SV | Alojamientos Turísticos</title>
+    <title>Caminex El Salvador | Alojamientos Turísticos</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <header class="navbar">
         <div class="logo">Caminex SV</div>
+        <button class="hamburger" id="hamburger-btn">☰</button>
+        <nav id="nav-links">
+            <a href="#hero">Inicio</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#servicios">Alojamientos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
     </header>
+
     <section id="hero" class="hero">
         <div class="hero-content">
             <h1>Descubre tu descanso ideal en El Salvador</h1>
+            <p>Desde las montañas de la Ruta de las Flores hasta las cálidas playas de La Libertad.</p>
+            <a href="#servicios" class="cta-button">Ver Alojamientos</a>
         </div>
     </section>
+
+    <section id="nosotros" class="nosotros">
+        <h2>Sobre Caminex El Salvador</h2>
+        <p>Somos tu principal aliado para descubrir los rincones más impresionantes de nuestro país. Nuestro objetivo es conectar a viajeros nacionales y extranjeros con alojamientos auténticos, seguros y cómodos, garantizando una experiencia inolvidable en cada destino salvadoreño.</p>
+    </section>
+
+    <section id="servicios" class="servicios">
+        <h2>Nuestros Alojamientos Destacados</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Cabañas en Apaneca</h3>
+                <p>Disfruta del clima fresco y la naturaleza en nuestras cabañas equipadas, ideales para turismo ecológico.</p>
+            </div>
+            <div class="card">
+                <h3>Hostales en El Tunco</h3>
+                <p>Ambiente vibrante a pocos pasos de las mejores olas. Perfecto para surfistas y mochileros.</p>
+            </div>
+            <div class="card">
+                <h3>Hoteles Boutique en Suchitoto</h3>
+                <p>Descansa en el corazón de la historia colonial con comodidades de primer nivel y vistas al lago Suchitlán.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+        <h2>Reserva tu Experiencia</h2>
+        <form id="reserva-form">
+            <div class="form-group">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" placeholder="Ej. Juan Pérez">
+            </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" placeholder="juan@ejemplo.com">
+            </div>
+            <div class="form-group">
+                <label for="mensaje">¿Qué tipo de alojamiento buscas?</label>
+                <textarea id="mensaje" rows="4" placeholder="Detalla tu destino y fechas tentativas..."></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Enviar Solicitud</button>
+            <div id="form-mensaje"></div>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Caminex El Salvador. Todos los derechos reservados.</p>
+            <div class="redes">
+                <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
+            </div>
+            <p class="creditos">Desarrollado con fines educativos y de emprendimiento.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
